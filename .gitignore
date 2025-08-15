@@ -1,13 +1,43 @@
-# Miscellaneous
+# --------------------------------------------------
+# OS generated files
+# --------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------------------------------
+# Python backend / AI model
+# --------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+pip-log.txt
+*.log
+
+# AI model files (large weights)
+*.h5
+*.pt
+*.onnx
+*.weights
+
+# Environment variables & secrets
+.env
+.env.local
+
+# --------------------------------------------------
+# Flutter / Dart / Pub / Mobile
+# --------------------------------------------------
 *.class
 *.lock
 *.log
-*.pyc
 *.swp
 .buildlog/
 .history
-
-
 
 # Flutter repo-specific
 /bin/cache/
@@ -110,7 +140,9 @@ coverage/
 # Symbols
 app.*.symbols
 
+# --------------------------------------------------
 # Exceptions to above rules.
+# --------------------------------------------------
 !**/ios/**/default.mode1v3
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
