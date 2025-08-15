@@ -1,7 +1,7 @@
+from ai_model.detector_stub import detect_billboards  # Import the AI stub
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-from ai_model.detector_stub import detect_billboards  # Import the AI stub
 from typing import List, Optional
 from PIL import Image
 import io
