@@ -6,6 +6,9 @@ from PIL import Image
 import io
 
 app = FastAPI(title="Unauthorized Billboard Detection API", version="0.1.0")
+@app.get("/")
+def read_root():
+    return {"message": "Unauthorized Billboard Detection API is running"}
 
 class Box(BaseModel):
     x: int
